@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レスポンシブデザイン|webサイト作成講習会</title>
+    <style>
+        line {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        letter {
+            font-size: 12vw;
+            margin: 0 4vw;
+            font-family: serif;
+        }
+
+        attention {
+            display: block;
+            text-align: center;
+        }
+
+        size::before {
+            content: '狭めて';
+        }
+
+        @media screen and (max-width: 900px) {
+            line {
+                flex-direction: row;
+                transform: translateY(100%);
+            }
+
+            #n {
+                order: -1;
+            }
+
+            size::before {
+                content: '拡げて';
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <attention>ブラウザの横幅を<size></size>ください。</attention>
+    <line>
+        <letter id="o">お</letter>
+        <letter id="z">ざ</letter>
+        <letter id="n">な</letter>
+        <letter id="r">り</letter>
+    </line>
+</body>
+
+</html>

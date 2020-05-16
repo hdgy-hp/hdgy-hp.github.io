@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景色を替える|webサイト作成講習会</title>
+    <style>
+        body {
+            position: relative;
+            background: #f9f9f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        band {
+            position: absolute;
+            top: 50vh;
+            height: 200px;
+            width: 100%;
+            display: flex;
+        }
+
+        #sp0 {
+            width: 12%;
+            background: #f8ced9;
+        }
+
+        #sp1 {
+            width: 20%;
+            background: #d0bad9;
+        }
+
+        #sp2 {
+            width: 10%;
+            background: #9fd8ee;
+        }
+
+        #sp3 {
+            width: 15%;
+            background: #67b6a0;
+        }
+
+        #sp4 {
+            width: 6%;
+            background: #d7e598;
+        }
+
+        #sp5 {
+            width: 11%;
+            background: #f0c1c0;
+        }
+
+        #sp6 {
+            width: 17%;
+            background: #e85295;
+        }
+
+        #sp7 {
+            width: 9%;
+            background: #7053a0;
+        }
+
+        #sp8 {
+            width: 5%;
+            background: #229dd9;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+        $(function() {
+            $("spectre").click(function() {
+                var id = $(this).attr("id");
+                var cid = '#' + id;
+                var bg = $(cid).css("background-color");
+                $("body").css("background", bg);
+            })
+        });
+
+    </script>
+</head>
+
+<body>
+    <band>
+        <spectre id="sp0"></spectre>
+        <spectre id="sp1"></spectre>
+        <spectre id="sp2"></spectre>
+        <spectre id="sp3"></spectre>
+        <spectre id="sp4"></spectre>
+        <spectre id="sp5"></spectre>
+        <spectre id="sp6"></spectre>
+        <spectre id="sp7"></spectre>
+        <spectre id="sp8"></spectre>
+    </band>
+</body>
+
+</html>

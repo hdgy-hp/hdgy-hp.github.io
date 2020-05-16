@@ -1,0 +1,7 @@
+.jumbotron {
+    background-image: url(../img/mado.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>要素を消す|webサイト作成講習会</title>
+    <style>
+        body {
+            position: relative;
+            background: #f9f9f5;
+        }
+
+        clear {
+            font-size: 21px;
+            position: absolute;
+            top: 350px;
+            left: 350px;
+        }
+
+        circle {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            text-align: center;
+        }
+
+        circle p {
+            position: absolute;
+            top: 30%;
+            left: 25%;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        #c0 {
+            background: #ac80af;
+            top: 200px;
+            left: 150px;
+            z-index: 0;
+        }
+
+        #c1 {
+            background: #f5ed43;
+            top: 400px;
+            left: 250px;
+            z-index: 1;
+        }
+
+        #c2 {
+            background: #f39e3a;
+            top: 50px;
+            left: 200px;
+            z-index: 2;
+        }
+
+        #c3 {
+            background: #4ebfd4;
+            top: 450px;
+            left: 100px;
+            z-index: 3;
+        }
+
+        #c4 {
+            background: #e7437d;
+            top: 250px;
+            left: 400px;
+            z-index: 4;
+        }
+
+        #c5 {
+            background: #b6d458;
+            top: 50px;
+            left: 350px;
+            z-index: 5;
+        }
+
+        #c6 {
+            background: #79a6d9;
+            top: 150px;
+            left: 550px;
+            z-index: 6;
+        }
+
+        #c7 {
+            background: #534d8a;
+            top: 500px;
+            left: 300px;
+            z-index: 7;
+        }
+
+        #c8 {
+            background: #02142b;
+            top: 400px;
+            left: 400px;
+            z-index: 8;
+        }
+
+        #c9 {
+            background: #949492;
+            top: 400px;
+            left: 500px;
+            z-index: 9;
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script>
+        $(function() {
+            $("circle").click(function() {
+                var id = $(this).attr("id");
+                var cid = "#" + id;
+                $(cid).hide();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <clear>
+        <p>Clear!</p>
+    </clear>
+    <circle id="c0">
+        <p>Click Me!</p>
+    </circle>
+    <circle id="c1">
+        <p>Click Me!</p>
+    </circle>
+    <circle id="c2">
+        <p>Click Me!</p>
+    </circle>
+    <circle id="c3">
+        <p>Click Me!</p>
+    </circle>
+    <circle id="c4">
+        <p>Click Me!</p>
+    </circle>
+    <circle id="c5">
+        <p>Click Me!</p>
+    </circle>
+    <circle id="c6">
+        <p>Click Me!</p>
+    </circle>
+    <circle id="c7">
+        <p>Click Me!</p>
+    </circle>
+    <circle id="c8">
+        <p>Click Me!</p>
+    </circle>
+    <circle id="c9">
+        <p>Click Me!</p>
+    </circle>
+</body>
+
+</html>
